@@ -1,12 +1,13 @@
 import React from "react";
+import { orders } from "../reducers";
 
-function TransactionRow(props) {
+function TransactionRow() {
   return ( 
     <tr>
-      <td>{props.order.id}</td>
-      <td>{props.order.orderDate}</td>
-      <td>{props.order.orderTime}</td>
-      <td>{props.order.amount}</td>
+      <td>{orders.id}</td>
+      <td>{orders.orderDate}</td>
+      <td>{orders.orderTime}</td>
+      <td>{orders.amount}</td>
     </tr>
   );
 }

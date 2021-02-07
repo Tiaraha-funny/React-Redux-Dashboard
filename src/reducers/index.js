@@ -1,43 +1,43 @@
-import combineReducers from "redux";
-
-function newComments() {
+export function newComments() {
   return {
     type: "NEW_COMMENT",
   };
 }
-function newTasks() {
+
+export function newTasks() {
   return {
     type: "NEW_TASKS",
   };
 }
-function newOrders() {
+
+export function newOrders() {
   return {
     type: "NEW_ORDERS",
   };
 }
-function tickets() {
+export function tickets() {
   return {
     type: "TICKETS",
   };
 }
 
-function orders() {
+export function orders() {
   return {
     type: "ORDERS",
   };
 }
-function tasks() {
+export function tasks() {
   return {
     type: "TASKS",
   };
 }
-function messages() {
+export function messages() {
   return {
     type: "MESSAGES",
   };
 }
 
-function reducers(state, action) {
+export default function reducers(state, action) {
   switch (action.type) {
     case "NEW_COMMENT":
       return { ...state };
@@ -58,14 +58,4 @@ function reducers(state, action) {
     }
   }
 }
-
-export const rootReducer = combineReducers({
-    newComments: newCommentsReducer,
-    newTasks: newTasksReducer,
-    newOrders: newTasksReducer,
-    tickets: ticketsReducer,
-    orders: ordersReducer,
-    tasks: tasksReducer,
-    messages: messagesReducer,
-})
 

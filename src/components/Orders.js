@@ -1,6 +1,11 @@
 import React from "react";
+// import { useSelector } from "react-redux";
+import { newOrders } from "../reducers";
 
-function Orders(props) {
+function Orders() {
+  
+  // const newOrders = useSelector(state => state)
+
   return ( 
     <div className="col-lg-3 col-md-6">
       <div className="panel panel-yellow">
@@ -10,7 +15,7 @@ function Orders(props) {
               <i className="fa fa-shopping-cart fa-5x"></i>
             </div>
             <div className="col-xs-9 text-right">
-              <div className="huge">{props.newOrders}</div>
+              <div className="huge">{newOrders}</div>
               <div>New Orders!</div>
             </div>
           </div>
@@ -26,4 +31,10 @@ function Orders(props) {
     </div>);
 }
 
+//function mapStateToProps() {
+//  return {
+//    newOrders: newOrders
+//  }
+//}
+//
 export default Orders;

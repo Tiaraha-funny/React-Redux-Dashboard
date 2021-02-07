@@ -10,7 +10,7 @@ function Tickets(props) {
               <i className="fa fa-support fa-5x"></i>
             </div>
             <div className="col-xs-9 text-right">
-              <div className="huge">{props.tickets}</div>
+              <div className="huge">{Tickets}</div>
               <div>Support Tickets!</div>
             </div>
           </div>

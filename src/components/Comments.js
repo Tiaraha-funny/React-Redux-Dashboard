@@ -1,6 +1,7 @@
 import React from "react";
+import { newComments } from "../reducers";
 
-function Comments(props) {
+function Comments() {
   return ( 
     <div className="col-lg-3 col-md-6">
       <div className="panel panel-primary">
@@ -10,7 +11,7 @@ function Comments(props) {
                       <i className="fa fa-comments fa-5x"></i>
                   </div>
                   <div className="col-xs-9 text-right">
-                      <div className="huge">{props.newComments}</div>
+                      <div className="huge">{newComments}</div>
                       <div>New Comments!</div>
                   </div>
               </div>
